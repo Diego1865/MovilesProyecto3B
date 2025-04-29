@@ -18,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
                 R.raw.mivideo;
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
+        /*
+        * String videoUrl = "https://www.example.com/video.mp4";
+        * Uri uri = Uri.parse(videoUrl);
+        * videoView.setVideoURI(uri);
+        */
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
