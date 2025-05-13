@@ -7,11 +7,12 @@
     android:gravity="center"
     android:padding="16dp"
     android:background="@color/dark_gray">
-    <VideoView
+
+    <!-- Video normal (sin rotación) -->
+    <TextureView
         android:id="@+id/videoView"
         android:layout_width="200dp"
-        android:layout_height="180dp"
-        android:src="@raw/mivideo1"/>
+        android:layout_height="180dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,34 +21,31 @@
         android:layout_gravity="center"
         android:gravity="center">
 
-        <!-- Imagen rotada 90° a la izquierda -->
-        <VideoView
+        <!-- Video rotado 90° a la izquierda -->
+        <TextureView
             android:id="@+id/videoViewLeft"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@raw/mivideo1"/>
+            android:layout_width="220dp"
+            android:layout_height="200dp" />
 
-        <!-- Imagen rotada 90° a la derecha -->
-        <VideoView
+        <!-- Video rotado 90° a la derecha -->
+        <TextureView
             android:id="@+id/videoViewRight"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@raw/mivideo1"/>
+            android:layout_width="220dp"
+            android:layout_height="200dp"/>
 
     </LinearLayout>
 
-    <!-- Imagen rotada 180° -->
-    <VideoView
+    <!-- Video rotado 180° -->
+    <TextureView
         android:id="@+id/videoView180"
         android:layout_width="200dp"
-        android:layout_height="180dp"
-        android:src="@raw/mivideo1"
-        />
+        android:layout_height="180dp"/>
 
     <Button
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reproducir"
+        android:layout_below="@id/videoView"
         android:layout_marginTop="16dp" />
 </LinearLayout>
